@@ -1,138 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My awesome portfolio</title>
+    <title>Ali Ashraf Tanvir - Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="site-main-wrapper">
-        <button class="hamberger">
-            <img src="./images/hamberger.svg" alt="">
-        </button>
+     <label for="mobile-menu-toggle" class="hamberger">
+            <img src="./images/hamberger.svg" alt="Menu">
+     </label>
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
 
         <div class="mobile-nav">
-            <button class="times"><img src="./images/times.svg" alt=""></button>
+            <label for="mobile-menu-toggle" class="times">
+                <span>&times;</span>
+            </label>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Project</a></li>
-                 <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <header>
+        <header id="home">
             <div class="container">
                 <nav id="main-nav" class="flex items-center justify-between">
                     <div class="left flex items-center">
                         <div>
-                            <a href="#">Home</a>
+                          <a href="#home">Home</a>
                             <a href="#about">About</a>
-                            <a href="#work">Project</a>
-                            <a href="#contact">Contact</a>
+                            <a href="#education">Education</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#work">Projects</a>
+                            <a href="#contact">Contact</a>  
                         </div>
                     </div>
                 </nav>
                 <div class="hero flex items-center justify-between">
                     <div class="left flex-1 flex justify-center">
-                        <img src="./images/aliashraftanvir_sust_gate-removebg-preview.png" alt="">
+                        <img src="./images/aliashraftanvir_sust_gate-removebg-preview.png" alt="Ali Ashraf Tanvir">
                     </div>
                     <div class="right flex-1">
                         <h6>Ali Ashraf Tanvir</h6>
                         <h1>CSE <span>Student</span></h1>
-                        <p>a Computer Science student at SUST with a love for solving complex problems and a growing passion for AI and intelligent systems.
-                        </p>
-                        <h6>Welcome to my portfolio — take a look at what I’ve been working on!</h6>
                        
+                        <div>
+                            <h2 >
+                                <i>
+                             Undergraduate student (6th semester) at Shahjalal University of Science and Technology. 
+                              Eager to contribute to research or technical roles that foster innovation and continuous learning.
+                                </i>
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
         <section id="about" class="about">
-            <div class="container flex items-center about-inner-wrap">
-                <div class="flex-1">
-                    <img class="about-me-img" src="./images/aliashraftanvir_boat_seat.jpeg" alt="">
+            <div class="container">
+                <h1 class="section-heading">About <span>Me</span></h1>
+                <div class="flex items-center about-inner-wrap">
+                    <div class="flex-1">
+                        <img class="about-me-img" src="./images/aliashraftanvirProfile.jpeg" alt="Ali Ashraf Tanvir">
+                    </div>
+                    <div class="flex-1 right">
+                        <h3>Hello! I'm Ali Ashraf Tanvir.</h3>
+                        <p>Hi, I'm Ali Ashraf Tanvir, a Computer Science & Engineering student at Shahjalal University of Science and Technology (SUST).
+                            I'm passionate about problem solving, exploring the depths of artificial intelligence, and constantly learning how technology can shape the future. 
+                            Whether it's writing clean code or diving into machine learning, I enjoy building solutions that make a real impact.
+                        </p>
+                        <h3>Profiles:</h3>
+                        <div class="social">
+                            <a href="https://codeforces.com/profile/ashraftanvir01" target="_blank"><img src="./images/codeforces.png" alt="Codeforces"></a>
+                            <a href="https://www.facebook.com/aliashraftanvir" target="_blank"><img src="./images/facebook.webp" alt="Facebook"></a>
+                            <a href="https://twitter.com/ashraftanvir01" target="_blank"><img src="./images/X.png" alt="X"></a>
+                            <a href="https://www.linkedin.com/in/ali-ashraf-tanvir-428572228" target="_blank"><img src="./images/linkedinlogo.png" alt="Linkedin"></a>
+                            <a href="https://github.com/tanvir2021331001" target="_blank"><img src="./images/githublogo.jpg" alt="Github"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-1 right">
-                    <h1>About <span>Me</span></h1>
-                    <h3>Hello! i’m Ali Ashraf Tanvir.</h3>
-                    <p>Hi, I’m Ali Ashraf Tanvir, a Computer Science & Engineering student at Shahjalal University of Science and Technology (SUST).
-                        I’m passionate about problem solving, exploring the depths of artificial intelligence, and constantly learning how technology can shape the future. 
-                        Whether it's writing clean code or diving into machine learning, I enjoy building solutions that make a real impact.
-                    </p>
-                    <div class="social">
-                        <a href="https://codeforces.com/profile/ashraftanvir01"><img src="./images/codeforces.png" alt=""></a>
-                        <a href="https://www.facebook.com/aliashraftanvir"><img src="./images/facebook.webp" alt=""></a>
-                        <a href="https://twitter.com/ashraftanvir01"> <img src="./images/X.png" alt=""></a>
-                     
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <div class="container">
+                <h1 class="section-heading">Education</h1>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h2>Bachelor of Science in Computer Science and Engineering</h2>
+                        <h3>Shahjalal University of Science and Technology, Sylhet, Bangladesh</h3>
+                        <p><strong>Status:</strong> Undergraduate student (6th semester)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="objective" class="objective">
+            <div class="container">
+                <h1 class="section-heading">Objective</h1>
+                <div class="objective-content">
+                    <p>Undergraduate student (6th semester) at Shahjalal University of Science and Technology. Skilled in problem-solving and a Specialist on Codeforces. Strong analytical and programming abilities with a keen interest in Artificial Intelligence and Machine Learning. Eager to contribute to research or technical roles that foster innovation and continuous learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h1 class="section-heading">Skills</h1>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h2>Programming Languages</h2>
+                        <p>C, C++, Java, Node.js, Express.js, MongoDB, Python (NumPy, Pandas, Matplotlib, Seaborn)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h2>Communication Languages</h2>
+                        <p><strong>Bangla:</strong> Native</p>
+                        <p><strong>English:</strong> Intermediate</p>
+                    </div>
+                    <div class="skill-category">
+                        <h2>Technical Tools</h2>
+                        <p>Git, GitHub, VS Code, Postman, npm, MongoDB Compass</p>
+                    </div>
+                    <div class="skill-category">
+                        <h2>Machine Learning Specialization</h2>
+                        <p>Completed Supervised Machine Learning: Regression and Classification (1/3 of the full specialization) on Coursera.</p>
+                        <p>Currently continuing Machine Learning and AI learning through online courses and hands-on projects.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="work" class="work">
-            <div class="container" >
-                <h1 class="section-heading"><span>My</span> Project</h1>
-                <p>I Worked in many project with high interest, some of them are</p>
+            <div class="container">
+                <h1 class="section-heading">Problem Solving & <span>Projects</span></h1>
+                
+                <div class="problem-solving">
+                    <h2>Problem Solving Achievements</h2>
+                    <ul>
+                        <li>Solved 1000+ problems across platforms, including Codeforces, CodeChef, AtCoder, and VJudge</li>
+                        <li>Specializing in data structures and algorithms</li>
+                        <li>Achieved <strong>Specialist rank</strong> on Codeforces</li>
+                    </ul>
+                </div>
 
+                <h2 class="projects-heading">Some of my notable projects:</h2>
                 <div class="card-wrapper">
                     <div class="card">
-                        <div class="overlay">
-                            <span>Category</span>
-                             <p>Console based application</p>
-                            <a href="https://github.com/tanvir2021331001/DS/blob/main/Daily%20Life%20Management%20System%20by%20team%20foot-fool.cpp">Click Here</a>
+                        <div class="card-content">
+                            <h3 class="card-title">Daily Life Management System</h3>
+                            <div class="card-image-wrapper">
+                                <img src="./images/dailylife.avif" alt="Daily Life Management System">
+                                <div class="overlay">
+                                    <span class="overlay-category">Console Application</span>
+                                    <p class="overlay-desc">C++ OOP Project</p>
+                                    <a href="https://github.com/tanvir2021331001/DS/blob/main/Daily%20Life%20Management%20System%20by%20team%20foot-fool.cpp" target="_blank" class="overlay-link">View on GitHub</a>
+                                </div>
+                            </div>
+                            <p class="card-desc">A console-based C++ project implementing object-oriented programming concepts</p>
                         </div>
-                        <p>Daily Life Management System</p>
-                        <img src="./images/dailylife.avif" alt="">
                     </div>
-                   
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Chasha.i</h3>
+                            <div class="card-image-wrapper">
+                                <img src="./images/aggreconnect.jpg" alt="Chasha Project">
+                                <div class="overlay">
+                                    <span class="overlay-category">Full-Stack Web App</span>
+                                    <p class="overlay-desc">Node.js, Express, MongoDB</p>
+                                    <a href="https://github.com/tanvir2021331001/Chasha.i" target="_blank" class="overlay-link">View on GitHub</a>
+                                </div>
+                            </div>
+                            <p class="card-desc">A full-stack web application built with EJS, Node.js, Express.js, and MongoDB, integrated with AI features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="activities">
+            <div class="container">
+                <h1 class="section-heading">Activities & <span>Involvement</span></h1>
+                <div class="activities-content">
+                    <div class="activity-item">
+                        <h2>Competitions</h2>
+                        <p>Participated in Inter-University Programming Contests (IUPCs) at:</p>
+                        <ul>
+                            <li>SUST (Shahjalal University of Science and Technology)</li>
+                            <li>Metropolitan University</li>
+                            <li>Leading University, Sylhet</li>
+                        </ul>
+                    </div>
+                    <div class="activity-item">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Blood donor (2 times)</li>
+                            <li>Served as Publication Secretary in University Zilla Association, supporting publications and event organization</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section id="contact" class="contact">
             <div class="container">
-                <h1 class="section-heading">Contact <span>With me</span></h1>
-                <p>Ali Ashraf Tanvir</p>
+                <h1 class="section-heading">Contact <span>Me</span></h1>
+                <p>Get in touch with me</p>
                 <div class="card-wrapper">
                     <div class="card">
-                        <img src="./images/phone.png" alt="" width="100" height="100">
+                        <img src="./images/phone.png" alt="Phone" width="100" height="100">
                         <h1>Call Me</h1>
-                        <h6>01706260318</h6>
+                        <h6>+8801706260318</h6>
                     </div>
                     <div class="card">
-                        <img src="./images/email.svg" alt="" width="100" height="100">
+                        <img src="./images/email.svg" alt="Email" width="100" height="100">
                         <h1>Email</h1>
                         <h6>aliashraftanvir410@gmail.com</h6>
                     </div>
                     <div class="card">
-                        <img src="./images/address.png" alt="" width="100" height="100">
+                        <img src="./images/address.png" alt="Address" width="100" height="100">
                         <h1>Address</h1>
                         <h6>Shahparan Hall, SUST</h6>
                     </div>
-
                 </div>
 
-                <form action="">
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Your Name *">
-                        <input type="email" placeholder="Your Email *">
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="input-wrap-2">
+                        <input type="text" id="name" name="name" placeholder="Your Name *" required>
+                        <!-- <input type="email" id="email" name="email" placeholder="Your Email *" required> -->
                     </div>
                     <div class="input-wrap-2">
-                        <input type="text" placeholder="Your Subject...">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                        <input type="text" id="subject" name="subject" placeholder="Your Subject...">
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
                     </div>
                     <div class="btn-wrapper">
-                        <button class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </div>
                 </form>
+
+                <script>
+                    function handleFormSubmit(event) {
+                        event.preventDefault();
+                        
+                        const name = document.getElementById('name').value;
+                        // const email = document.getElementById('email').value;
+                        const subject = document.getElementById('subject').value || 'Contact from Portfolio';
+                        const message = document.getElementById('message').value;
+                  
+                        const mailtoLink = 'mailto:aliashraftanvir410@gmail.com' +
+                            '?subject=' + encodeURIComponent(subject) +
+                            '&body=' + encodeURIComponent(
+                                 message
+                            );
+                        
+                        window.location.href = mailtoLink;
+                        
+                        setTimeout(function() {
+                            document.getElementById('contact-form').reset();
+                        }, 1000);
+                    }
+                </script>
             </div>
         </section>
         <footer>
